@@ -157,7 +157,7 @@ export class AngularEditorService {
 
     const uploadData: FormData = new FormData();
 
-    uploadData.append('file', file, file.name);
+    uploadData.append('image', file, file.name);
 
     return this.http.post<UploadResponse>(this.uploadUrl, uploadData, {
       reportProgress: true,
